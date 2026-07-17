@@ -1,0 +1,24 @@
+body {
+    background-color: #0B1849;
+    color: #EBEDE3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: #E4B028;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    text-align: center;
+}
+
+th {
+    background-color: #E4B028;
+    color: #0B1849;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #321E48;
+            color: #ffffff;
+            padding-top: 0.5rem;
+        }
+
+        .container-form {
+            background-color: #43637E;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 20px #D9FFF4;
+            width: 100%;
+            max-width: 650px;
+            margin: 50px auto;
+            /* background-image: url("back.jpg"); */
+            background-size: cover;
+
+        }
+
+        legend {
+            color: #000000;
+        }
+
+        fieldset {
+            border: 100px solid #000000;
+        }
+
+        form {
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        input[type="jenis_kelamin"],
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+        }
+
+        fieldset {
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            padding: 20px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+        }
+
+        legend {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background-color: #ffffff;
+            color: #4CAF50;
+        }
+
+        .hobi-list label {
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-form">
+        <form action="" method="" enctype="">
+            <fieldset>
+                <legend>😊 Nanya Nanya ajaa 😊</legend>
+                <div class="form-grup">
+                    <label for="username">Apa Username kamu??</label>
+                    <input type="text" name="username" id="username" autocapitalize="words"
+                        placeholder="Tulis username kamu disini...">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Masukan Email kamu</label>
+                    <input type="email" name="email" id="email" placeholder="Tulis email kamu disini...">
+                </div>
+
+                <div class="form-group">
+                    <label for="tanggal_lahir">Kapan kamu lahir??</label>
+                    <input type="date" name="tanggal_lahir" id="tanggal_lahir">
+                </div>
+
+                <div class="form-group">
+                    <label for="jenis_kelamin">Kamu laki apa perempuan??</label>
+                    <input type="radio" name="jenis_kelamin" id="laki-laki" value="L"> LAKI LAKI
+                    <input type="radio" name="jenis_kelamin" id="perempuan" value="P">PEREMPUAN
+                </div>
+
+                <div class="form-group">
+                    <label for="agama">Agama mu apaa?
+                        <select name="agama" id="agama">
+                            <option value="">klik agama disini...</option>
+                            <option value="islam">Islam</option>
+                            <option value="kristen">Kristen</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="budha">Budha</option>
+                            <option value="konghucu">Konghucu</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="alamat">Rumahmu dimana??
+                        <textarea name="alamat" id="alamat" rows="4"
+                            placeholder="Tulis alamat kamu di sini..."></textarea>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="hobi">Hobi kamu apa??</label>
+                    <div class="hobi-list">
+                        <label><input type="checkbox" name="hobi" id="hobi1" value="Membaca"> Membaca</label>
+                        <label><input type="checkbox" name="hobi" id="hobi2" value="Menulis"> Menulis</label>
+                        <label><input type="checkbox" name="hobi" id="hobi4" value="Bermain Game"> Bermain Game</label>
+                        <label><input type="checkbox" name="hobi" id="hobi5" value="Bermain Musik"> Bermain
+                            Musik</label>
+                        <label><input type="checkbox" name="hobi" id="hobi6" value="Ngoding"> Ngoding</label>
+                    </div>
+                </div>
+
+                <input class="btn" type="submit" value="Simpan">
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
