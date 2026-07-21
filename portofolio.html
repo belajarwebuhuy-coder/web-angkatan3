@@ -40,7 +40,9 @@
         <section class="profile">
             <img class="foto-profile" src="pp.jpg" alt="">
             <!-- <h2>Ajis Setiawan</h2> -->
-            <h3>Web Programming</h3>
+            <h2> Halo, saya
+                <span id="typing"></span>
+            </h2>
         </section>
 
         <!-- profile end -->
@@ -154,7 +156,8 @@
     </main>
     <!-- Footer -->
     <footer>
-        Copyright© 2026 - Web Pogramming Batch 3
+        <!-- Copyright© 2026 - Web Pogramming Batch 3 -->
+        <p>Copyright&copy; 2026 - Web Porgramming Batch 3</p>
     </footer>
     <!-- Footer end -->
 
@@ -163,6 +166,51 @@
         function toggleMenu() {
             document.getElementById("menu").classList.toggle("show");
         }
+
+        // Animasi Ketik
+        const word = ["Web Porgrammer",
+            "Data Analyst",
+            "Fotografer"
+        ];
+        const typing = document.getElementById("typing");
+
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeEfect() {
+            const currentWord = word[wordIndex];
+
+            if (!isDeleting) {
+                typing.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+
+                if (charIndex === currentWord.length) {
+                    isDeleting = true;
+
+                    setTimeout(typeEfect, 1500);
+                    return;
+                }
+
+            } else {
+                typing.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+
+                if (charIndex === 0) {
+                    isDeleting = false;
+                    wordIndex++;
+
+                    if (wordIndex >= word.length) {
+                        wordIndex = 0;
+
+                    }
+                }
+            }
+            setTimeout(typeEfect, isDeleting ? 80 : 120);
+        }
+
+        typeEfect();
+
     </script>
     <!-- JavaScript END -->
 </body>

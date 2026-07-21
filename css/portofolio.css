@@ -131,6 +131,24 @@ nav ul li a:hover::after {
     aspect-ratio: 1/1;
 }
 
+h2 span {
+    color: black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#typing {
+    border-right: 3px solid black;
+    padding-right: 5px;
+    animation: blink .7s infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 .profile h2 {
     margin-top: 1rem;
     color: #000000;
